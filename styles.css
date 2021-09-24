@@ -1,2 +1,170 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin-top: 20px;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+html {min-height: 100%;}
+body {min-height: 100vh;}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+#container {
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    padding: 5% 15%;
+    font-size: 16px;
+}
+
+.grid-container {
+    width: 80%; 
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 24px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 5px 24px 1px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.join-community-part {
+    background-color: white;
+    padding: 7% 7%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#title1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+#title1-description {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-bottom: 1.5%;
+}
+
+.paragraph1 {
+    color: hsl(218, 22%, 67%);
+}
+
+.subscription-part {
+    background-color: hsl(179, 62%, 43%);
+    padding: 14% 14%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.title2-3 {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+#price {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 1.5%;
+}
+
+#price span {
+    color: hsla(204, 43%, 93%, 0.6);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#price-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    margin-bottom: 6%;
+}
+
+#sign-up-button {
+    color: white;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    -webkit-box-shadow: 0px 5px 24px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 5px 24px 1px rgba(0,0,0,0.2);
+}
+
+.why-us-part {
+    background-color: hsla(179, 62%, 43%, 0.74);
+    padding: 14% 14%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.why-us-paragraph {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ################# Mobile Version ################### */
+@media only screen and (max-width:750px) {
+
+    #container {
+        padding: 15% 8%;
+    }
+    
+    .grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .join-community-part {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #title1 {
+        font-size: 20px;
+    }
+    
+    #title1-description {
+        font-size: 16px;
+    }
+    
+    .paragraph1 {
+        font-size: 14px;
+    }
+
+    .subscription-part {
+        padding: 7% 7%;
+    }
+
+    .title2-3 {
+        font-size: 19px;
+    }
+
+    #sign-up-button {
+        width: 90%;
+    }
+
+    .why-us-part {
+        padding: 7% 7%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
